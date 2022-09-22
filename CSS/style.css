@@ -1,0 +1,156 @@
+.cabecera {
+    max-width: auto;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;   
+
+}
+
+.marca img {
+    width: auto;
+    height: 70px;
+    float: left;
+}
+
+.barra_nav {
+    width: 400px;
+    height: 70px;
+    float: right;
+    margin-top: .8em;    
+}
+
+.barra_nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+}
+
+.barra_nav ul li {
+    display: inline;
+}
+
+.barra_nav ul li a {
+    display: inline-block;
+    padding: .8em;
+    background-color: rgb(19, 91, 154);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: .6em;
+    transition: background-color .5s;
+}
+
+.barra_nav ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: gold;
+
+}
+figure {
+    margin: 0;
+}
+/*ah, centrar las imagenes en el centro de cada recuadro xD*/
+img {
+    display: block;
+    border: 0;
+    width: 95%;
+    height: auto;
+}
+
+.tarjeta a{
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+    
+}
+
+.tarjeta a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+
+
+.tarjeta {
+    background: hsl(0, 0%, 90%);
+    margin: 1.1%;
+    width: 31.1%;
+}
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tarjeta img{
+    padding: .5em;
+}
+.tarjeta div{
+    
+}
+
+.notas{
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+}
+
+.nota{
+    background: hsl(0, 0%, 90%);
+    margin-bottom: 1.6em;
+}
+
+.nota a{
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nota img {
+    width: 30%;
+    height: 30%;  
+    
+}
+
+.nota div {
+   padding-left: 1.6em;
+}
+/*Empieza responsive de celular*/
+@media all and (max-width: 599px) {
+    header {
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+
+    .marca img {
+       width: 100%;
+       height: auto;
+       float: none;
+       padding: 10px;
+       box-sizing: border-box;
+   }
+   
+   .barra_nav{
+       width: 100%;
+       height: auto;
+       float: none;
+       margin-top: 20px;
+   }
+   
+   .barra_nav ul {
+       float: none;
+   }
+   
+   .barra_nav ul li {
+       display: block;
+   }
+
+   .barra_nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+   }
+}
